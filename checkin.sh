@@ -113,7 +113,7 @@ elif [ "$COMMAND" == "checkin" ]  && [ $# -lt 3 ]
 fi
 # end error checking 
 
-# run commands locally or remotely depending on if the machine the script is running is a CSU cs machine
+# run commands locally or remotely depending on if the machine is a CSU CS machine
 if [[ $IS_LOCAL == 1 ]]
     then
     runLocal
