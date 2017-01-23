@@ -73,17 +73,17 @@ runRemote() {
 
 # runs commands locally
 runLocal() {
-    # copy file to remote and run the checkin program via ssh
+    # run the checkin program
     if [[ "$COMMAND" == "checkin" ]] 
         then
         exec ~$CLASS/bin/checkin $ASSIGNMENT $FILENAME 
 
-    # ssh and run the peek program
+    # run the peek program
     elif [[ "$COMMAND" == "peek" ]] 
         then
         exec ~$CLASS/bin/peek $ASSIGNMENT
 
-    # ssh and run the grade program
+    # run the grade program
     elif [[ "$COMMAND" == "grade" ]]
         then
         exec ~$CLASS/bin/grade $ASSIGNMENT
